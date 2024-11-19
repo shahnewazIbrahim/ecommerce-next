@@ -120,7 +120,7 @@ The frontend is a server-side rendered (SSR) application using Next.js, focusing
 
 ### Frontend Setup (Next.js)
 
-1. Navigate to the backend directory:
+1. Navigate to the fontend directory:
 
    ```bash
    cd next-ecommerce-frontend

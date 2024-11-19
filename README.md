@@ -117,3 +117,40 @@ The frontend is a server-side rendered (SSR) application using Next.js, focusing
    ```bash
     php artisan serve
    ```
+
+### Frontend Setup (Next.js)
+
+1. Navigate to the backend directory:
+
+   ```bash
+   cd next-ecommerce-frontend
+
+   ```
+
+2. Install Dependencies:
+
+   ```bash
+    npm install
+
+   ```
+
+3. Configure .env.local file:
+
+   ```bash
+    NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
+
+   ```
+
+4. Run migrations and seed the database:
+
+   ```bash
+    php artisan migrate --seed
+
+   ```
+
+5. Start the project:
+
+   ```bash
+    npm run dev
+
+   ```

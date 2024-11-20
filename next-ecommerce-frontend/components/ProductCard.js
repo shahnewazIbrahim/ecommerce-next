@@ -23,7 +23,7 @@ export default function ProductCard({ product }) {
           {product.name}
         </h3>
         <div className="flex items-center space-x-2 mt-2">
-          <span className="text-green-600 font-bold">${product.price}</span>
+          <span className="text-green-600 font-bold">&#2547;{product.price}</span>
           {product.discount_price && (
             <>
               <del className="text-gray-400 text-sm">${product.original_price}</del>

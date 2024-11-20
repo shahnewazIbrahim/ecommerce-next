@@ -3,8 +3,6 @@ import Image from "next/image";
 
 export default function ProductCard({ product }) {
   const imageUrl = product.product_images[0]?.image_path;
-  console.log({imageUrl});
-  
 
   return (
     <div className="group border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">

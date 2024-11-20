@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
               <Image
-                src={isError ? "https://via.placeholder.com/128x32?text=Logo" : "/images/logo_light.png"}
+                src={isError ? "https://via.placeholder.com/128x32?text=Logo" : ""}
                 alt="Logo"
                 className="w-32 hidden md:block"
                 width={128}

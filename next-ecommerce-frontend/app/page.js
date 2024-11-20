@@ -1,4 +1,3 @@
-import Navbar from '@/components/Navbar';
 import ProductCard from '@/components/ProductCard';
 
 export default async function Home() {
@@ -13,11 +12,11 @@ export default async function Home() {
     const products = await res.json();
     
     console.log({products});
-    
+
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Navbar */}
-            <Navbar />
+            {/* <Navbar /> */}
 
             {/* Hero Section */}
             <div className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-12 text-center">

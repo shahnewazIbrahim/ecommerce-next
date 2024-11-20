@@ -19,7 +19,7 @@ export default function ProductCard({ product }) {
 
       {/* Product Info */}
       <div className="p-4">
-        <h3 className="text-lg font-semibold group-hover:text-purple-600 transition-colors duration-300">
+        <h3 className="text-lg font-semibold text-black group-hover:text-purple-600 transition-colors duration-300">
           {product.name}
         </h3>
         <div className="flex items-center space-x-2 mt-2">

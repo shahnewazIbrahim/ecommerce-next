@@ -1,11 +1,16 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+
+  useEffect(() => {
+    setCurrentTime(Date.now());
+  }, []);
 
   const logo = isError ?  "https://via.placeholder.com/128x32?text=Logo" : null
 
@@ -54,8 +59,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
               <Image
-                src={logo ?? null}
+                src={"https://via.placeholder.com/128x32?text=Logo"}
                 alt="Logo"
+                placeholder="blur"
+                blurDataURL="../public/next.svg"
                 className="w-32 hidden md:block"
                 width={128}
                 height={32}

@@ -22,7 +22,7 @@ export default function ProductCard({ images }) {
             <SwiperSlide key={index}>
                 <div className="relative w-full h-96">
                     <Image
-                        src={image.image_path || '/placeholder.jpg'}
+                        src={image.image_path ?? null}
                         alt={`Image ${index + 1}`}
                         layout="fill"
                         objectFit="cover"

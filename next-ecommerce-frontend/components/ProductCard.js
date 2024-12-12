@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
       {/* Product Image */}
       <div className="relative w-full h-56 overflow-hidden">
         <Image
-          src={imageUrl || "/placeholder.jpg"}
+          src={imageUrl ?? null}
           alt={product.name}
           layout="fill"
           objectFit="cover"

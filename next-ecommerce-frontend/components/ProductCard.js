@@ -5,7 +5,7 @@ export default function ProductCard({ product }) {
   const imageUrl = product.product_images.length ?  product.product_images[0]?.image_path : null;
 
   return (
-    <div className="w-80 group border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    <div className="w-full group border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       {/* Product Image */}
       <div className="relative w-full h-56 overflow-hidden">
         <Image

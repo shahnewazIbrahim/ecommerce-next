@@ -7,7 +7,7 @@ export default function ProductCard({ product }) {
   return (
     <div className="w-full group border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       {/* Product Image */}
-      <div className="relative w-full h-56 overflow-hidden">
+      <div className="relative w-full h-64 overflow-hidden">
         <Image
           src={imageUrl ?? null}
           alt={product.name}
